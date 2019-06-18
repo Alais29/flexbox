@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ejercicio 5</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        img {
+            max-width: 100%;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .img-first-row,
+        .img-scnd-row,
+        .img-thrd-row {
+            padding: 1em 1em;
+            box-sizing: border-box;
+        }
+
+        .img-first-row,
+        .img-thrd-row {
+            flex: 1 1 25%;
+        }
+
+        .img-top {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .img-first-row:nth-child(4) > .img-top {
+            width: 100%;
+        }
+
+        .img-thrd-row:nth-child(7),
+        .img-thrd-row:nth-child(9) {
+            height: 400px;
+        }
+
+        .img-thrd-row:nth-child(7) > .img-bottom,
+        .img-thrd-row:nth-child(9) > .img-bottom {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .img-scnd-line {
+            flex: 4 4 100%;
+        }
+
+        .img-mid {
+            height: 500px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="img-first-row">
+            <img src="img/image1.jpg" alt="" class="img-top">
+        </div>
+        <div class="img-first-row">
+            <img src="img/image2.jpg" alt="" class="img-top">
+        </div>
+        <div class="img-first-row">
+            <img src="img/image3.jpg" alt="" class="img-top">
+        </div>
+        <div class="img-first-row">
+            <img src="img/image4.jpg" alt="" class="img-top">
+        </div>
+        <div class="img-scnd-row">
+            <img src="img/image5.jpg" alt="" class="img-mid">
+        </div>
+        <div class="img-thrd-row">
+            <img src="img/image6.jpg" alt="" class="img-bottom">
+        </div>
+        <div class="img-thrd-row">
+            <img src="img/image7.jpg" alt="" class="img-bottom">
+        </div>
+        <div class="img-thrd-row">
+            <img src="img/image8.jpg" alt="" class="img-bottom">
+        </div>
+        <div class="img-thrd-row">
+            <img src="img/image9.jpg" alt="" class="img-bottom">
+        </div>
+    </div>
+</body>
+
+</html>
